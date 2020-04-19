@@ -11,7 +11,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
   # aktywowanie hermetycznego środowiska
   $ source .venv/bin/activate
-  $ make deps - instalacja srodowiska   (Makefiles)
+  $ make deps - instalacja srodowiska   (Makefile)
   $ make lint - sprawdzenie wygladu kodu
   $ make test - odpalenie testow
   $ make run  - uruchomienie aplikacji
