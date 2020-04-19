@@ -11,7 +11,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
   # aktywowanie hermetycznego środowiska
   $ source .venv/bin/activate
-  $ make deps - instalacja srodowiska
+  $ make deps - instalacja srodowiska   (Makefiles)
   $ make lint - sprawdzenie wygladu kodu
   $ make test - odpalenie testow
   $ make run  - uruchomienie aplikacji
@@ -65,10 +65,8 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
   ```
   # miejsce na twoje notatki
-  https://semver.org/ - stronka o wersjonowaniu
-  semantic versioning - numerowanie wersji w formacie X.Y.Z
-  inkrementujemy Z - przy bugfixach, Y - przy nowych featureach(wstecznie kompatybilnych), X - jak mamy zmiane API (inerfejsu zewn. niekompatybilna wstecznie) Jak inkrementujemy Y to Z=0, jak inkrementujemy X to Y=0, Z=0
-  MAJOR.MINOR.PATCH format
+  https://semver.org/ - strona o wersjonowaniu
+  semantic versioning - numerowanie wersji w formacie MAJOR.MINOR.PATCH
 
   dind Docker in Docker - da sie zagniezdzac dokery jedne w drugim
 
