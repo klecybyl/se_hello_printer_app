@@ -1,4 +1,4 @@
-# Simple Flask App
+# Simple Flask App KLS
 
 Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć
 o Continuous Integration, Continuous Delivery i Continuous Deployment.
@@ -11,6 +11,16 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
   # aktywowanie hermetycznego środowiska
   $ source .venv/bin/activate
+  $ make deps - instalacja srodowiska
+  $ make lint - sprawdzenie wygladu kodu
+  $ make test - odpalenie testow
+  $ make run  - uruchomienie aplikacji
+  $ make docker_build - zbudowanie pakietu dockera (trzeba z sudo wykonac)
+  $ make docker_run - uruchomienie aplikacji jako doker (tez z sudo)
+  $ docker stop hello-world-printer-dev - zatrzymanie dockera
+  $ docker rm hello-world-printer-dev - wywalenie dockera
+
+  # aleternatywnie zamiast make deps
   $ pip install -r requirements.txt
   $ pip install -r test_requirements.txt
 
@@ -47,7 +57,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   ```
   ...
 
-  # aktywacja 
+  # aktywacja
   $ source .venv/bin/activate
   ```
 
@@ -55,6 +65,24 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
   ```
   # miejsce na twoje notatki
+  https://semver.org/ - stronka o wersjonowaniu
+  semantic versioning - numerowanie wersji w formacie X.Y.Z
+  inkrementujemy Z - przy bugfixach, Y - przy nowych featureach(wstecznie kompatybilnych), X - jak mamy zmiane API (inerfejsu zewn. niekompatybilna wstecznie) Jak inkrementujemy Y to Z=0, jak inkrementujemy X to Y=0, Z=0
+  MAJOR.MINOR.PATCH format
+
+  dind Docker in Docker - da sie zagniezdzac dokery jedne w drugim
+
+
+  http codes
+  200	OK
+  301	Moved Permanently
+  302	Found
+  400	Bad Request
+  403	Forbidden
+  404	Not Found
+  405	Method Not Allowed
+  500	Internal Server Error
+  418	I’m a teapot	„Jestem czajnikiem” – tzw. easter egg.
   ```
 
 # Pomocnicze
