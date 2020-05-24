@@ -6,7 +6,12 @@ install:
 script:
   - make lint
   - make test
+  - make test_cov
   - make docker_build
   - make docker_push
-after_success:
-  - make docker_build
+# after_success:
+#  - make docker_build
+deploy:
+  provider: heroku
+  app: fierce-garden-20344
+  api_key: ${HEROKU_API_KEY}
