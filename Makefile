@@ -26,6 +26,11 @@ docker_stop:
 	docker stop $(SERVICE_NAME)-dev
 test_smoke:
 	curl --fail 127.0.0.1:5000
+test_cov:
+	PYTHONPATH=. py.test --verbose -s --cov=.
+test_xunit:
+	PYTHONPATH=. py.test -s --cov=. --cov-report xml --junit-xml=test_results.xml
+
 
 USERNAME=klecybyl
 TAG=$(USERNAME)/hello-world-printer

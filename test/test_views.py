@@ -15,7 +15,7 @@ class FlaskrTestCase(unittest.TestCase):
 
     def test_msg_with_output_json(self):
         rv = self.app.get('/?output=json')
-        self.assertEqual(b'{ "imie":"Kasia", "mgs":Hello World!"}', rv.data)
+        self.assertEqual(b'{ "imie":"Kasia", "mgs":Hello World!"}', rv.data) # noqa
 
     def test_msg_with_output_xml(self):
         rv = self.app.get('/?output=xml')

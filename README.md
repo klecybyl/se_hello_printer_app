@@ -82,6 +82,8 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   500	Internal Server Error
   418	I’m a teapot	„Jestem czajnikiem” – tzw. easter egg.
   ```
+  
+# Dodano monitoring www na statuscake.com - auto SLA
 
 # Pomocnicze
 
