@@ -1,4 +1,3 @@
-'''
 import unittest
 from hello_world import app
 from hello_world.formater import SUPPORTED
@@ -30,8 +29,8 @@ class FlaskrTestCase(unittest.TestCase):
     def test_name(self):
         rv = self.app.get('/?name=Kasia')
         self.assertEqual(b'Kasia Hello World!"}', rv.data) # noqa
-'''
 
+'''
 import unittest
 from ddt import ddt, data
 from hello_world import app
@@ -68,3 +67,4 @@ class FlaskrTestCase(unittest.TestCase):
                           + 'Hello World!'
                           + '</msg>\n</greetings>\n')
         self.assertEqual(correct_output.encode(), rv.data)
+'''
